@@ -1,0 +1,456 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+  --third-color:white;
+}
+.darktheme{
+  --primary-color:black;
+  --secondary-color:white;
+  --third-color:#181818;
+
+}
+body,html{
+    min-height:100%;
+}
+body{
+  background-color: var(--primary-color);
+}
+header{
+  
+  position: fixed;
+  transition: 0.6s;
+  width:100%;
+
+}
+header ul{
+  position: relative;
+}
+header ul li{
+  position: relative;
+}
+header ul li a{
+  position: relative;
+  transition: 0.6s;
+}
+#navbar{
+    background-color: red;
+    padding:0.5rem;
+    justify-content: center;
+    border-bottom:5px outset red;
+    height:40px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navbar ul li{
+    list-style:none;
+    margin-top:10px;
+}
+
+#navbar ul li a{
+    margin:1rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size:1.5rem;
+    align-self: center;
+    text-decoration: none;
+    color:var(--primary-color);
+}
+#navbar ul li a:hover{
+    border-bottom:4px solid var(--secondary-color);
+    cursor: pointer;
+}
+#navbar ul li a::before{
+    border-bottom:4px;
+}
+#icon{
+  width:30px;
+  cursor: pointer;
+  float: right;
+  margin-left:10px;
+}
+#bgimg{
+    background-image: url('Cristiano-Ronaldo.jpg');
+    height: 800px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    border: 10px solid var(--primary-color);
+}
+#bgimg div{
+    border: 3px solid white;
+    top:40%;
+    position: relative;
+    margin-left:15%;
+    margin-right:15%;
+    padding:7px;
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+#bgimg div h1{
+    text-align: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+#bgimg div h4{
+    text-align: center;
+    color:white;
+    margin-top:2px;
+}
+#seperator{
+    border-bottom: 2px solid;
+}
+#seperator p{
+    color:white;
+}
+#bgimg2{
+    box-shadow: 5px -5px 20px 0px rgba(0, 0, 0, 0.7);
+    border: 3px solid var(--primary-color);
+    margin: 10px;
+    background-color: var(--third-color);
+}
+#bgimg2 div{
+    top:40%;
+    position: relative;
+    margin:10px;
+    padding:7px;
+    overflow: hidden;
+}
+#bgimg2 div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:var(--secondary-color)
+}
+#bgimg2 div h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    margin:15px;
+    color:red;
+}
+#H2{
+    margin-top:10px;
+}
+#list{
+    margin-top:10px;
+    list-style-type: disc;
+}
+#list li{
+    padding:7px;
+    font-size: 18px;
+    font-family: arial;
+    color:var(--secondary-color)
+}
+#achi{
+    background-image: url('07517bcf190c36becbbd44bb882679dbd945e2f0.webp');
+    height: 800px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid var(--primary-color);
+    border-right: 10px solid var(--primary-color);
+    border-left: 10px solid var(--primary-color);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+}
+#achi div{
+    border: 3px solid white;
+    top:40%;
+    position: relative;
+    margin-left:15%;
+    margin-right:15%;
+    padding:7px;
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+#achi div h1{
+    text-align: center;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.2rem;
+    padding:1rem;
+}
+#list2 li{
+    color:white;
+    font-size: 18px;
+    padding:0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer div{
+  float: right;
+}
+#bt1,#bt2{
+  padding:0.3rem;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+#timeline-section{
+	background-color: #24292d;
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: aqua;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #eaa023;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 15px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+
+@media (min-width:330px) and (max-width:450px){
+  #navbar{
+    background-color: red;
+    padding:5px;
+    justify-content: center;
+    border-bottom:2px outset red;
+    height:30px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navbar ul li{
+    list-style:none;
+    
+}
+
+#navbar ul li a{
+    margin:5px;
+    font-family: arial;
+    font-weight: bold;
+    font-size:12px;
+    align-self: center;
+    text-decoration: none;
+    color:var(--primary-color);
+}
+#navbar ul li a:hover{
+    border-bottom:2px solid var(--secondary-color);
+    cursor: pointer;
+}
+#navbar ul li a::before{
+    border-bottom:2px;
+}
+#icon{
+  width:20px;
+  cursor: pointer;
+  float: right;
+  margin-left:10px;
+}
+#bgimg{
+    background-image: url('Cristiano-Ronaldo.jpg');
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid var(--primary-color);
+    border-right: 10px solid var(--primary-color);
+    border-left: 10px solid var(--primary-color);
+}
+#bgimg div{
+    border: 2px solid white;
+    top:40%;
+    position: relative;
+    margin-left:15%;
+    margin-right:15%;
+    padding:7px;
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+#bgimg div h1{
+    text-align: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#bgimg div h4{
+    text-align: center;
+    color:white;
+    margin-top:2px;
+    font-size: 8px;
+}
+#seperator{
+    border-bottom: 2px solid;
+}
+#seperator p{
+    color:white;
+}
+#bgimg2{
+    box-shadow: 5px -5px 20px 0px rgba(0, 0, 0, 0.7);
+    border: 3px solid var(--primary-color);
+    margin: 10px;
+    background-color: var(--third-color);
+}
+#bgimg2 div{
+    top:40%;
+    position: relative;
+    margin:10px;
+    padding:7px;
+    overflow: hidden;
+}
+#bgimg2 div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:var(--secondary-color)
+}
+#bgimg2 div h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin:15px;
+    color:red;
+}
+#H2{
+    margin-top:10px;
+}
+#list{
+    margin-top:10px;
+    list-style-type: disc;
+}
+#list li{
+    padding:7px;
+    font-size: 12px;
+    font-family: arial;
+    color:var(--secondary-color)
+}
+#achi{
+    background-image: url('07517bcf190c36becbbd44bb882679dbd945e2f0.webp');
+    height: 300px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid var(--primary-color);
+    border-right: 5px solid var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+}
+#achi div{
+    border: 2px solid white;
+    top:15%;
+    position: relative;
+    margin-left:10%;
+    margin-right:10%;
+    padding:3px;
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+#achi div h1{
+    text-align: center;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    padding:5px;
+}
+#list2 li{
+    color:white;
+    font-size: 10px;
+    padding:5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer div{
+  float: right;
+}
+#bt1,#bt2{
+  padding:0.3rem;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+}
